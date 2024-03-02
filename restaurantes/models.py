@@ -8,4 +8,6 @@ class Restaurantes(models.Model):
     telephone = models.CharField(max_length=15)
     cuisine = models.CharField(max_length=100)
     working_hours = models.CharField(max_length=100)
-    pass
+
+    def __str__(self):
+        return self.name
