@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import Restaurantes
 
 # Create your views here.
-def restaurantes(request):
-    return HttpResponse("Hello, world. You're at the restaurantes index.")
+def home(request):
+    return  render (request, 'restaurantes.html')
