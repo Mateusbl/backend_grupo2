@@ -4,4 +4,6 @@ from .models import Restaurantes
 
 # Create your views here.
 def home(request):
-    return  render (request, 'restaurantes.html')
+    return  render (request, 'registration/base.html')
+def login(request):
+    return render(request, 'registration/login.html')
